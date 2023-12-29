@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX2cPM7q00NVsZDVZEvFWTnfuqarFrSxb4wC24sTarIMyfwQT_DJHb9eI-bd80LAtpT14&usqp=CAU">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,300&family=Inter&family=Kanit&family=Poppins:wght@100;200;300;400;500;600;700&family=Reem+Kufi&family=Work+Sans:wght@300&display=swap');
+*
+     {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+     }
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    background-image: url(home-image.jpg);
+    display: flex;
+    flex-direction: column;
+    
+}
+.header{
+    width: 100%;
+    height: 70px;
+   /* background-color: red;*/
+    padding: 0px 35px;
+    display:  flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+
+}
+.logo{
+    width: 10%;
+    height: 70px;
+   /* background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo-text{
+    width: 80px;
+    /*background-color: black;*/
+    color:black;
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: 500;
+
+
+}
+.nav{
+    width: 45%;
+    height: 70px;
+   /* background-color: blue;*/
+}
+.nav-links{
+    width: 100%;
+    height: 70px;
+    /*background-color: yellow;*/
+    list-style-type:none ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'poppins';
+    font-weight: bold;
+    
+}
+.banner-details{
+    width: 100%;
+   /* height: 50px;*/
+   /* background-color:white;*/
+    padding: 10px 85px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+.from{
+    width: max-content;
+    padding: 10px 20px;
+    background-color: lightgrey;
+    font-family: 'poppins';
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+.banner-heading{
+    font-size: 50px;
+    font-family: 'poppins';
+    color: white;
+    background-color: blue;
+
+
+}
+.btn{
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    
+    
+}
+.nav-link{
+    padding: 5px 10px;
+    transition: .3s;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background-color: white;
+    color:black;
+
+}
+.booking{
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgba(255,255, 255, .7);
+    display: flex;
+    column-gap: 20px;
+}
+.inp{
+    width:22%; 
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins';
+    row-gap: 5px;
+    justify-content: flex-start;
+    
+}
+input{
+    height: 40px;
+    text-indent: 10px;
+    font-size: 18px;
+}
+.book-btn{
+    padding: 10px 30px;
+}
+.about{
+    width: 100%;
+    padding: 50px 15px;
+   /* background-color: red;*/
+    font-family: 'poppins';
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlight{
+    font-weight: bold;
+    font-size: 40px;
+}
+.icon{
+    font-size: 40px;
+
+}
+.rooms{
+    width: 100%;
+    padding: 50px 15px;
+    background-color: grey;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rooms-area{
+    width: 100%;
+    padding: 20px 0px;
+    /*background-color: brown;*/
+    margin-top: 50px;
+    display: flex;
+    column-gap: 55px;
+
+}
+.room{
+    width: 30%;
+    /*height: 400px;*/
+    background-color: white;
+}
+.room-img{
+    height: 270px;
+    width: 100%;
+   /* background-color: yellow;*/
+}
+.room-image{
+    width: 100%;
+    height: 270px;
+}
+.room-details{
+    /*background-color: aqua;*/
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.subscribe{
+    width: 100%;
+    padding: 50px 15px;
+   /* background-color: brown;*/
+    display: flex;
+    justify-content: space-between;
+}
+.sub-text{
+    width:30% ;
+    padding: 20px;
+   /* background-color: aqua;*/
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.logo2{
+    width: 50%;
+   /* background-color: yellow;*/
+}
+.logo-text{
+    background-color: black;
+    color: white
+}
+.sub-desc{
+    font-size: ;
+}
+.sub-area{
+    width: 30%;
+    padding: 20px;
+   /* background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'poppins';
+    row-gap: 10px;
+}
+.sub-inp{
+    width: ;
+}
+.sub-form{
+    display: flex;
+}
+.pts{
+    width: 100%;
+    height: 500px;
+    column-gap: 70px;
+}
+.photo{
+    width: 33%;
+    height: 500px;
+    column-gap: 50px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <!--banner area-->
+ <div class="banner" id="banner">
+    <!--header area-->
+    <header class="header">
+        <div class="logo">
+            <p class="logo-text">YASMEEN</p>
+            <p class="logo-text">TRAVELS</p>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-links">
+                <li class="nav-link"> <a href="#Home">Home</a></li>
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"> <a href="#Rooms">Rooms</a></li>
+                <li class="nav-link"><a href="#Photos">Photos</a></li>
+                <li class="nav-link"> <a href="#subscribe">Subscribe</a></li>
+
+            </ul>
+
+        </nav>
+     
+    </header>
+    <!-- banner details-->
+    <div class="banner-details">
+       <div class="from">
+          Best of travel places for you from us
+       </div>
+
+       <h1 class="banner-heading">
+            Explore the beauty of LONDON
+       </h1>
+       <button class="btn">
+          Explore Now
+         </button>
+
+        <div class="booking">
+
+            <div class="inp">
+                <label for="check in">Check in date</label>
+                <input type="date" id="check in">
+
+            </div>
+            <div class="inp">
+                <label for="check out">Check out date</label>
+                <input type="date" id="check out">
+
+            </div>
+            <div class="inp">
+                <label for="adults">No Of Adults</label>
+                <input type="number" placeholder="0" id="Adults">
+
+            </div>
+            <div class="inp">
+                <label for="children">NO OF Children</label>
+                <input type="number" placeholder="0" id="adults">
+
+            </div>
+                
+                <button class="btn book-btn">
+                   Book Now
+                 </button>
+           
+       </div>
+
+    </div>
+ </div>
+ <div class="about" id="about">
+    <i class="fa-solid fa-globe icon"></i>
+    <p>
+   <span class="highlight">London</span> , the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.</p>
+
+ </div>
+ <div class="rooms" id="Rooms">
+    <h1 class="section-title">Best Of London Hotel rooms and suits for you</h1>
+    <p>
+        Book your Hotel in London now. Quick, Easy Booking. Great Rates. Great Choice. Airport Taxi available. 24/7 Customer Service. Villas. Motels. Secure Booking. Great Availability. No Booking Fees. Get Instant Confirmation
+    </p>
+    <div class="rooms-area">
+        <div class="room">
+            <div class="room-img">
+                <img class="room-image" src="hotel-style-bedroom-ideas.avif" alt="london-room">
+            </div>
+            <div class="room-details">
+                <h2>Deluxe villa</h2>
+                <h3>$300/Day</h3>
+                <p>Room is very clean and spacias.The room contain touble bed.Room contains full of furniture and kitchen.It is all about white theem.</p>
+                 <button class="btn">
+                    Know more
+
+                 </button>
+            </div>
+            
+
+        </div>
+        <div class="room">
+            <div class="room-img">
+                <img class="room-image" src="imageroom2.jpg" alt="london-room">
+            </div>
+            <div class="room-details">
+                <h2>Spa Breaks</h2>
+                <h3>$600/Day</h3>
+                <p>The hotel provides all facilities for you.In this hotel specality is pool.We provide transport facility also.All types of packages also available.</p>
+                 <button class="btn">
+                    Know more
+
+                 </button>
+            </div>
+            
+
+        </div>
+        <div class="room">
+            <div class="room-img">
+                <img class="room-image" src="imagesroom3.jpg" alt="london-room">
+            </div>
+            <div class="room-details">
+                <h2>Kimpton Fitzroy</h2>
+                <h3>$1000/Day</h3>
+                <p>In this hotel the specality is painting the room.If one room is differnt than other room.In this hotel we provide single double rooms.</p>
+                 <button class="btn">
+                    Know more
+
+                 </button>
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+ </div>
+ <div class="pts" id="pts">
+    <h2>Photos</h2>
+    <img class="photo" src="london image.jpg" alt="">
+    <img class="photo" src="london image2.jpg" alt="">
+    <img class="photo" src="london image4.jpg" alt="">
+    
+ </div>
+   <!-- subscibe -->
+ <div class="subscribe" id="subscribe">
+    <div class="sub-text">
+        <div class="logo2">
+            <p class="logo-text">YASMEEN</p>
+            <p class="logo-text">TRAVELS</p>
+
+        </div>
+         <p>Tourism is a social, cultural and economic phenomenon which entails the movement of people to countries or places outside their usual environment for personal or business/professional purposes.
+        </p>
+    </div>
+    <div class="sub-area">
+        <h2>Subscribe to this travels</h2>
+        <div class="sub-form">
+        <input type="text" placeholder="Enter Email">
+        <button class="btn">Subscribe</button>
+
+      </div>
+   </div>
+   
+ </div>
+ 
+ 
+</body>
+</html>
